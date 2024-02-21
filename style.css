@@ -30,7 +30,7 @@ body{
     color: #001e4d;
     font-weight: 600;
 }
-.options{
+.btn{
     background: #fff;
     color: #222;
     font-weight: 500;
@@ -42,9 +42,12 @@ body{
     border-radius: 4px;
     transition: all 0.3s;
 }
-.options:hover{
+.btn:hover:not([disabled]){
     background: #0c0c0c;
     color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #next-btn{
     background:#001e4d;
@@ -58,4 +61,10 @@ body{
     cursor: pointer;
     text-align: center;
     display: none;
+}
+.incorrect{
+    background: #ff9393;
+}
+.correct{
+    background: #9aeabc;
 }
